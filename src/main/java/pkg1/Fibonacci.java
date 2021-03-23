@@ -9,7 +9,7 @@ public class Fibonacci {
     public static final int n = 50;
     public static void main(String [] args){
         long []f= new long[n];
-        f[0]=0;
+        f[0]=1;
         f[1]=1;
 
         for(int i =2;i<n;i++) {
@@ -17,7 +17,7 @@ public class Fibonacci {
         }
 
         for(int i=0;i<n;i++){
-            System.out.printf("n=%d fibonacci=%d \n", i, f[i]);
+            System.out.printf("n=%d fibonacci=%d \n", i+1, f[i]);
         }
     }
 }
